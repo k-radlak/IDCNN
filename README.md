@@ -1,6 +1,6 @@
 # Impulse Detection Convolutional Neural Network (IDCNN)
 
-The code was based on the tensorflow implementation of DnCNN from https://github.com/crisb-DUT/DnCNN-tensorflow designed for Gaussian Noise removal. The proposed filter i a modyfication of the DnCNN desigmend for 
+The code prepared based on the tensorflow implementation of DnCNN from https://github.com/crisb-DUT/DnCNN-tensorflow, which was designed for Gaussian noise removal. The proposed filter is a modyfication of the DnCNN desiged for impulsive noise removal.
 
 
 
