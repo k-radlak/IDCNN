@@ -1,6 +1,6 @@
 # Impulse Detection Convolutional Neural Network (IDCNN)
 
-The code prepared based on the tensorflow implementation of DnCNN from https://github.com/crisb-DUT/DnCNN-tensorflow, which was designed for Gaussian noise removal. The proposed filter is a modyfication of the DnCNN desiged for impulsive noise removal.
+The code prepared based on the tensorflow implementation of DnCNN from https://github.com/crisb-DUT/DnCNN-tensorflow, which was designed for Gaussian noise removal. The proposed filter called IDCNN is a modyfication of the DnCNN desiged for impulsive noise removal.
 
 
 
@@ -15,8 +15,8 @@ Under preparation
 Under preparation
 
 ### Train
-* To train the model download BSD500 dataset from https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html
-* Put images data/bsd500/
+* To train your own the model download BSD500 dataset from https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html
+* Put images into folder data/bsd500/
 * In the next step generate patches that are used in the training with default parameters
 ```
 $ python generate_patches.py
@@ -27,11 +27,12 @@ $ bash generate_patches.sh
 ```
 
 
-* Run training with default parameters 
+* Run training with the default parameters 
 ```
 $ python main.py
 ```
-    or using shell script in which you can easili modify the training parameters
+  or using shell script in which you can easili modify the training parameters
+    
 ```
 $ bash generate_patches.sh
 ```
@@ -40,7 +41,7 @@ $ bash generate_patches.sh
 $ python main.py --phase test
 
 ```
-### Inference on pretrained model
+### Inference using the pretrained model
 ```
 $ python inference.py --test_file data/img/pic003___in_40.png --save_dir .  --checkpoint_dir results/checkpoint_impulses_bsd500_41/ --phase inference
 ```
